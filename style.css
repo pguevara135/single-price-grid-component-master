@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-column: 100%;
+    border-radius: 10px;
+}
+
+.top {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.tittle {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+h5 {
+    color: hsl(71, 73%, 54%);
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    padding: 15px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.price span {
+    font-size: 15px;
+    color: #fdf3f36c;
+    margin-left: 15px;
+}
+
+.left p {
+    color: #fdf3f3d5;
+    padding-bottom: 20px;
+}
+
+.submit {
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    padding: 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.164);
+}
+
+.right {
+    background-color: hsl(179, 60%, 47%);
+    padding: 20px;
+    color: #fff;
+}
+
+.right p {
+    color: #fdf3f3d5;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 750px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 650px;
+        border-radius: 15px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        padding: 40px 50px 40px 45px;
+    }
+
+    .tittle {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 19px;
+    }
+
+    .top p {
+        font-size: 16px;
+    }
+
+    .botton {
+        display: grid;
+        grid-column: 1 / 3;
+    }
+
+    .left, .right {
+        grid-row: 2 / 3;
+        padding: 35px;
+    }
+
+    .left p {
+        margin-bottom: 18px;
+    }
+}
